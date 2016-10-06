@@ -6,8 +6,8 @@ namespace VasilDakov\Postcode;
  * Class Validator
  * @author Vasil Dakov <vasildakov@gmail.com>
  */
-class Validator implements ValidatorInterface {
-
+class Validator implements ValidatorInterface
+{
     /**
      * Official gov.uk postcode regular expression
      */
