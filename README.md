@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/vasildakov/postcode-validator.svg?branch=master)](https://travis-ci.org/vasildakov/postcode-validator)
 [![Coverage Status](https://coveralls.io/repos/github/vasildakov/postcode-validator/badge.svg?branch=master)](https://coveralls.io/github/vasildakov/postcode-validator?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/vasildakov/postcode-validator/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/vasildakov/postcode-validator/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/vasildakov/postcode-validator/v/stable)](https://packagist.org/packages/vasildakov/postcode-validator)
 [![Total Downloads](https://poser.pugx.org/vasildakov/postcode-validator/downloads)](https://packagist.org/packages/vasildakov/postcode-validator)
 [![License](https://poser.pugx.org/vasildakov/postcode-validator/license)](https://packagist.org/packages/vasildakov/postcode-validator)
