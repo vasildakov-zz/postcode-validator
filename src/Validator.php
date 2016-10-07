@@ -8,21 +8,35 @@ namespace VasilDakov\Postcode;
  */
 class Validator implements ValidatorInterface
 {
-    /**
-     * Official gov.uk postcode regular expression
-     */
-    const POSTCODE = "/^([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})
-    |(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z])))) [0-9][A-Za-z]{2})$/";
+    private static $regexp = [
+        'BG' => '/^\d{4}$/',
+        'GB' => '/^[A-Za-z]{1,2}\d[a-z\d]?\s*\d[A-Za-z]{2}$/',
+        'IT' => '/^\d{5}$/',
+        'NL' => '/^[1-9][0-9]{3}[ ]?([A-RT-Za-rt-z][A-Za-z]|[sS][BCbcE-Re-rT-Zt-z])$/',
+    ];
+
 
     /**
-     * @param  string  $value
+     * @var Adapter\AdapterInterface $adapter
+     */
+    private $adapter;
+
+    /**
+     * Constructor
+     *
+     * @param Adapter\AdapterInterface $adapter
+     */
+    public function __construct(Adapter\AdapterInterface $adapter)
+    {
+        $this->adapter = $adapter;
+    }
+
+    /**
+     * @param  mixed $value
      * @return boolean
      */
-    public function isValid($value)
+    public function validate($value)
     {
-        if (!\preg_match(self::POSTCODE, $value)) {
-            return false;
-        }
-        return true;
+        return $this->adapter->isValid($value);
     }
 }
