@@ -28,8 +28,8 @@ class ValidatorTest extends \PHPUnit_Framework_TestCase
             // P
             ['EC1A 1BB', true],
             ['W1A 0AX', true],
-            //['M1 1AE', true],
-            //['B33 8TH', true],
+            ['M1 1AE', true],
+            ['B33 8TH', true],
             ['CR2 6XH', true],
             ['DN55 1PT', true],
 
