@@ -1,7 +1,13 @@
 {
     "name": "vasildakov/postcode-validator",
     "description": "UK Postcode Validator",
-    "keywords": ["uk", "postcode", "validator", "post", "php"],
+    "keywords": [
+        "uk",
+        "postcode",
+        "validator",
+        "post",
+        "php"
+    ],
     "homepage": "https://github.com/vasildakov/postcode-validator",
     "license": "MIT",
     "authors": [
@@ -18,6 +24,11 @@
         "squizlabs/php_codesniffer": "~2.3",
         "satooshi/php-coveralls": "~1.0",
         "phpunit/php-code-coverage": "^3.0|^4.0"
+    },
+    "suggest": {
+        "vasildakov/postcode": "For creating Postcode value object",
+        "vasildakov/postcode-parser": "For parsing postcodes",
+        "vasildakov/postcode-doctrine": "For integration postcode with Doctrine ORM"
     },
     "autoload": {
         "psr-4": {
