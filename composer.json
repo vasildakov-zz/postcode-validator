@@ -1,8 +1,7 @@
 {
     "name": "vasildakov/postcode-validator",
-    "description": "UK Postcode Validator",
+    "description": "Postcode Validator",
     "keywords": [
-        "uk",
         "postcode",
         "validator",
         "post",
@@ -27,7 +26,7 @@
     },
     "suggest": {
         "vasildakov/postcode": "For creating Postcode value object",
-        "vasildakov/postcode-parser": "For parsing postcodes",
+        "vasildakov/postcode-parser": "For parsing Postcodes",
         "vasildakov/postcode-doctrine": "For integration postcode with Doctrine ORM"
     },
     "autoload": {
