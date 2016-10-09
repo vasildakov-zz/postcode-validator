@@ -4,7 +4,6 @@ namespace VasilDakov\Tests\Validator;
 use VasilDakov\Postcode\ValidatorInterface;
 use VasilDakov\Postcode\Validator;
 
-
 class BulgariaTest extends \PHPUnit_Framework_TestCase
 {
     /**
