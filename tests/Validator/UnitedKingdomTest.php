@@ -1,7 +1,6 @@
 <?php
-namespace VasilDakov\Tests;
+namespace VasilDakov\Tests\Validator;
 
-use VasilDakov\Postcode\Adapter;
 use VasilDakov\Postcode\ValidatorInterface;
 use VasilDakov\Postcode\Validator;
 
@@ -13,11 +12,11 @@ class UnitedKingdomTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider postcodeProvider
-     * @covers \VasilDakov\Postcode\Adapter\UnitedKingdom::isValid
+     * @covers \VasilDakov\Postcode\Validator::isValid
      */
-    public function testCanValidatePostcodes($string, $expected)
+    public function testCanValidateUnitedKingdomPostcodes($string, $expected)
     {
-        $adapter = new Adapter\UnitedKingdom;
+        $adapter = new Validator('UK');
 
         self::assertEquals($expected, $adapter->isValid($string));
     }

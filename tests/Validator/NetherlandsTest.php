@@ -1,23 +1,18 @@
 <?php
-namespace VasilDakov\Tests;
+namespace VasilDakov\Tests\Validator;
 
-use VasilDakov\Postcode\Adapter;
 use VasilDakov\Postcode\ValidatorInterface;
 use VasilDakov\Postcode\Validator;
 
-/**
- * @link https://goo.gl/hNd6k0 Postcodes in the United Kingdom
- * @link https://goo.gl/BJroys British Forces Post Office (BFPO)
- */
 class NetherlandsTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider postcodeProvider
-     * @covers \VasilDakov\Postcode\Adapter\Netherlands::isValid
+     * @covers \VasilDakov\Postcode\Validator::isValid
      */
-    public function testCanValidatePostcodes($string, $expected)
+    public function testCanValidateNetherlandsPostcodes($string, $expected)
     {
-        $adapter = new Adapter\Netherlands;
+        $adapter = new Validator('NL');
         self::assertEquals($expected, $adapter->isValid($string));
     }
 
