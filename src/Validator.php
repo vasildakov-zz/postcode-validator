@@ -36,7 +36,7 @@ class Validator implements ValidatorInterface
         'IT' => '(V-|I-)?[0-9]{5}',
         'JP' => '\d{3}-\d{4}',
         'MT' => '([A-Z]{3}\d{2}\d?)',
-        'NL' => '[1-9][0-9]{3}[ ]?([A-RT-Za-rt-z][A-Za-z]|[sS][BCbcE-Re-rT-Zt-z])',
+        'NL' => '[1-9][0-9]{3} ?(?!sa|sd|ss)[A-Za-z]{2}',
         'SE' => '(s-|S-){0,1}[0-9]{3}\s?[0-9]{2}',
         'UK' => '([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})
     |(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z])))) [0-9][A-Za-z]{2})',

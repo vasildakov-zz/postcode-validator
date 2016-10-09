@@ -10,23 +10,40 @@
 
 ## Installation
 
-The preferred method of installation is via Packagist and Composer. Run the following command to install the package and add it as a requirement to your project's composer.json:
+The preferred method of installation is via [Packagist][] and [Composer][]. Run
+the following command to install the package and add it as a requirement to
+your project's `composer.json`:
 
+```bash
 composer require vasildakov/postcode-validator
+```
 
 ## Examples
 
+### Validate United Kingdom postcodes
 ```php
 <?php
 
-$validator = new Postcode\Validator;
+$validator = new Postcode\Validator('UK');
 
-var_dump($validator->isValid(EC1V 9LB)); // true
+var_dump($validator->isValid('EC1V 9LB')); // true
+var_dump($validator->isValid('ABC1 XYZ')); // false
+```
 
-var_dump($validator->isValid(ABC1 XYZ)); // false
+### Validate Netherlands postcodes
+```php
+<?php
 
+$validator = new Postcode\Validator('NL');
+
+var_dump($validator->isValid('1012 JS')); // true
+var_dump($validator->isValid('1234 JS')); // false
 ```
 
 ## License
 
 Code released under [the MIT license](https://github.com/vasildakov/postcode-validator/blob/master/LICENSE)
+
+
+[packagist]: https://packagist.org/packages/vasildakov/postcode-validator
+[composer]: http://getcomposer.org/

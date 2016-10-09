@@ -23,14 +23,22 @@ class NetherlandsTest extends \PHPUnit_Framework_TestCase
     {
         return [
             // TRUE
-            ['1234AB', true],
-            ['1234 AB', true],
-            ['1001 AB', true],
+            ['7957ZG', true],
+            ['7960AA', true],
+            ['7920AB', true],
+            ['8382ZT', true],
+            ['1012JS', true],
+            ['7957 ZG', true],
+            ['7960 AA', true],
+            ['7920 AB', true],
+            ['8382 ZT', true],
+            ['1012 JS', true],
 
             // FALSE
             ['0123AB', false],
             ['1234A B', false],
             ['0123 AB', false],
+            ['1234 JS', true],
         ];
     }
 }
